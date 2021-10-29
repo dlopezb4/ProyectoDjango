@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+
+{%block creditos%}
+
+{%endblock%}
+
+
+{% block  inicioU%}
+<h1>Agregar nuevos Libros</h1>
+
+{%endblock%}
+
+{% block creaUsuario%}
+
+
+<a type="button"class="btn btn-primary" href="{% url 'home:crear' %}">crear</a>
+
+
+{%endblock%}
+
+
+{% block menu  %}
+
+<li><a href="{% url 'home:crear'%}" title="">CREAR</a></li>
+<li><a href="{% url 'home:listar_est'%}" title=""> LISTAR USUARIOS </a></li>
+
+<li><a href="http://192.168.20.1/webfig/#Queues/" title="">MIKROTIK</a></li>
+
+{%endblock%}
+
+
+

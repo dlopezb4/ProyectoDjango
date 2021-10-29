@@ -1,0 +1,24 @@
+
+{% extends 'base.html'%}
+
+{% block libros %}
+    <h1 style="color: brown;"> Ingresar Nuevo usuario</h1>
+    <form method="POST" style="color: rgb(243, 103, 22);" >
+     
+        {% csrf_token %}
+      Nombre {{ form.nombre}}
+      Apellido {{  form.apellido}}
+       Direccion{{ form.direccion}}
+      <input type ="submit" name="Guardar" style="color: brown;">
+
+    </form>
+    {%endblock%}
+
+    {% block menu  %}
+
+<li><a href="{% url 'home:crear'%}" title="">CREAR</a></li>
+<li><a href="{% url 'home:listar_est'%}" title=""> LISTAR USUARIOS </a></li>
+
+<li><a href="http://192.168.20.1/webfig/#Queues/" title="">MIKROTIK</a></li>
+
+{%endblock%}
